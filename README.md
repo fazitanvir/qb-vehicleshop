@@ -2,6 +2,7 @@
 Vehicle Shop for QB-Core Framework :car:
 
 ## Changes by BrianTU#0001
+-- FOR SUPPORT https://discord.gg/XqGhM4zWS9
 This was modified for my personal server. This does not provide all the features found in the base qb-core vehicleshop, so if you are looking for some features rename this resource and use it together.
 
 ### Features
