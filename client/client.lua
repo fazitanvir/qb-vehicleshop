@@ -249,7 +249,7 @@ AddEventHandler('qb-vehicleshop.vehiclesInfos', function()
     if Config.Debug then print(vehcategory) end
     for k,v in pairs(QBCore.Shared.Vehicles) do
         if v.shop == vehcategory then
-            vehiclesTable[v.categoryLabel] = {}
+            vehiclesTable[v.category] = {}
         end
     end
 
