@@ -249,7 +249,7 @@ AddEventHandler('qb-vehicleshop.vehiclesInfos', function()
     if Config.Debug then print(vehcategory) end
     for k,v in pairs(QBCore.Shared.Vehicles) do
         if v.shop == vehcategory then
-            vehiclesTable[v.categoryLabel] = {}
+            vehiclesTable[v.category] = {}
         end
     end
 
@@ -272,11 +272,11 @@ AddEventHandler('qb-vehicleshop.vehiclesInfos', function()
                             brand = v.brand,
                             model = v.model,
                             price = v.price,
-                            category = v.categoryLabel,
+                            category = v.category,
                             qtd = result,
                             discount = discount
                         }
-                        table.insert(vehiclesTable[v.categoryLabel], provisoryObject)
+                        table.insert(vehiclesTable[v.category], provisoryObject)
                     end, v.model)
                 else
                     provisoryObject = {
@@ -284,11 +284,11 @@ AddEventHandler('qb-vehicleshop.vehiclesInfos', function()
                         brand = v.brand,
                         model = v.model,
                         price = v.price,
-                        category = v.categoryLabel,
+                        category = v.category,
                         qtd = limitQuanty,
                         discount = discount
                     }
-                    table.insert(vehiclesTable[v.categoryLabel], provisoryObject)
+                    table.insert(vehiclesTable[v.category], provisoryObject)
                 end
             end
         end
