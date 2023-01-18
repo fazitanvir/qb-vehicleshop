@@ -272,11 +272,11 @@ AddEventHandler('qb-vehicleshop.vehiclesInfos', function()
                             brand = v.brand,
                             model = v.model,
                             price = v.price,
-                            category = v.categoryLabel,
+                            category = v.category,
                             qtd = result,
                             discount = discount
                         }
-                        table.insert(vehiclesTable[v.categoryLabel], provisoryObject)
+                        table.insert(vehiclesTable[v.category], provisoryObject)
                     end, v.model)
                 else
                     provisoryObject = {
@@ -284,11 +284,11 @@ AddEventHandler('qb-vehicleshop.vehiclesInfos', function()
                         brand = v.brand,
                         model = v.model,
                         price = v.price,
-                        category = v.categoryLabel,
+                        category = v.category,
                         qtd = limitQuanty,
                         discount = discount
                     }
-                    table.insert(vehiclesTable[v.categoryLabel], provisoryObject)
+                    table.insert(vehiclesTable[v.category], provisoryObject)
                 end
             end
         end
