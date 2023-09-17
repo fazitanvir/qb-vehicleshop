@@ -25,7 +25,7 @@ files {
 	'html/pickr.es5.min.js',
 	'html/picker.js',
 	'html/jquery-ui.js',
-	'html/jqueri-ui.css',
+	'html/jquery-ui.css',
 	'html/nano.min.css',
     'html/images/*.png',
     'html/fonts/*.ttf',
